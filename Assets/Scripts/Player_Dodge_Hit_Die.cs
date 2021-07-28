@@ -12,6 +12,7 @@ public class Player_Dodge_Hit_Die : MonoBehaviour
     public Animator m_Animator;
     public EnemyController m_Enemy;
     public GameObject pauseMenuUI;
+    public AudioSource end;
 
     void Start()
     {
@@ -48,6 +49,7 @@ public class Player_Dodge_Hit_Die : MonoBehaviour
         {
             currentHealth = 0;
             die();
+            end.Play();
         }
         
     }

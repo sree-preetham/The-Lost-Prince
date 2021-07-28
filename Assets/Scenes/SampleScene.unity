@@ -949,6 +949,7 @@ MonoBehaviour:
   m_Animator: {fileID: 174637758}
   m_Enemy: {fileID: 1039937803}
   pauseMenuUI: {fileID: 0}
+  end: {fileID: 0}
 --- !u!136 &174637765
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3587,7 +3588,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.23315932, y: -0.6675603, z: 0.23315932, w: 0.66756034}
+  m_LocalRotation: {x: 0.23315933, y: -0.6675602, z: 0.23315932, w: 0.6675604}
   m_LocalPosition: {x: -112.04476, y: 6.1054187, z: 46.608}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6673,7 +6674,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997135866}
-  m_LocalRotation: {x: 0.2171954, y: -0.6729236, z: 0.2171954, w: 0.6729236}
+  m_LocalRotation: {x: 0.21719542, y: -0.67292356, z: 0.21719542, w: 0.6729236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
