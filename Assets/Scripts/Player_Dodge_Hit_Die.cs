@@ -12,10 +12,12 @@ public class Player_Dodge_Hit_Die : MonoBehaviour
     public Animator m_Animator;
     public EnemyController m_Enemy;
     public GameObject pauseMenuUI;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthbar.SetMaxHealth(maxHealth);
+   
     }
 
 
@@ -31,8 +33,10 @@ public class Player_Dodge_Hit_Die : MonoBehaviour
             m_Animator.SetTrigger("Dodge");
         }
         
-
     }
+     
+
+    
     public void takeDamage(int damage)
     {
   
