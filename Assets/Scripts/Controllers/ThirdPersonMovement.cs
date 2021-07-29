@@ -9,6 +9,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public AudioSource foots;
     bool m_HasAudioPlayed = false;
+    bool isWalking = false;
 
     public Animator animator;
     public Transform cam;
@@ -35,14 +36,24 @@ public class ThirdPersonMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             animator.SetBool("IsWalking", true);
+            isWalking = true;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
 
-            if (!m_HasAudioPlayed && animator.GetBool("IsWalking"))
+            if (isWalking ==true)
             {
+                if(!foots.isPlaying)
+                {
                     foots.Play();
-                    m_HasAudioPlayed=true;
+                    m_HasAudioPlayed = true;
+                }
+                else
+                {
+                    foots.Stop();
+                    m_HasAudioPlayed = false;
+                }
+                    
             }
-             else if(m_HasAudioPlayed==true && !animator.GetBool("IsWalking"))
+             else if(m_HasAudioPlayed==true && isWalking == false)
              {
                      foots.Stop();
                     m_HasAudioPlayed=false;
