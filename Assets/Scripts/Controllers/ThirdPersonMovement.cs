@@ -59,7 +59,8 @@ public class ThirdPersonMovement : MonoBehaviour
             animator.SetBool("IsWalking", false);
         }
       
-            
+       
+
 
     }
 }
