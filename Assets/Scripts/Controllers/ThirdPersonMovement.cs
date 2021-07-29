@@ -7,6 +7,9 @@ public class ThirdPersonMovement : MonoBehaviour
     // Start is called before the first frame update
     public CharacterController controller;
 
+    public AudioSource foots;
+    bool m_HasAudioPlayed = false;
+
     public Animator animator;
     public Transform cam;
 
@@ -33,35 +36,17 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             animator.SetBool("IsWalking", true);
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
-            if ((controller.collisionFlags & CollisionFlags.Sides) != 0)
-            {
-                print("Touching sides!");
-            }
 
-            if (controller.collisionFlags == CollisionFlags.Sides)
+            if (!m_HasAudioPlayed && animator.GetBool("IsWalking"))
             {
-                print("Only touching sides, nothing else!");
+                    foots.Play();
+                    m_HasAudioPlayed=true;
             }
-
-            if ((controller.collisionFlags & CollisionFlags.Above) != 0)
-            {
-                print("Touching Ceiling!");
-            }
-
-            if (controller.collisionFlags == CollisionFlags.Above)
-            {
-                print("Only touching Ceiling, nothing else!");
-            }
-
-            if ((controller.collisionFlags & CollisionFlags.Below) != 0)
-            {
-                print("Touching ground!");
-            }
-
-            if (controller.collisionFlags == CollisionFlags.Below)
-            {
-                print("Only touching ground, nothing else!");
-            }
+             else if(m_HasAudioPlayed==true && !animator.GetBool("IsWalking"))
+             {
+                     foots.Stop();
+                    m_HasAudioPlayed=false;
+             }
         }
 
     }

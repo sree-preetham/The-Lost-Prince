@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Controllers\Enemies\GoblinController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Enemies\TrollController.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\Footsteps.cs" />
     <Compile Include="Assets\Scripts\Attack Scripts\HobgoblinAttack.cs" />
     <Compile Include="Assets\Scripts\Score_card.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerManager.cs" />
