@@ -7,6 +7,10 @@ public class GoblinAttack : MonoBehaviour
 {
     // Start is called before the first frame update
     public GoblinController[] goblin;
+
+    public AudioSource attack1;
+    public AudioSource attack2;
+    public AudioSource attack3;
    
 
     public Animator animator;
@@ -53,6 +57,7 @@ public class GoblinAttack : MonoBehaviour
         {
         float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack1");
+        attack1.Play();
         if (attack_range <= agent.stoppingDistance)
         {
 
@@ -68,6 +73,7 @@ public class GoblinAttack : MonoBehaviour
         {
         float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack2");
+        attack2.Play();
         if (attack_range <= agent.stoppingDistance)
         {
 
@@ -82,6 +88,7 @@ public class GoblinAttack : MonoBehaviour
         {
         float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack3");
+            attack3.Play();
         if (attack_range <= agent.stoppingDistance)
         {
 

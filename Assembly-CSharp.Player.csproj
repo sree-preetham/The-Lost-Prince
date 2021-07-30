@@ -81,6 +81,8 @@
     <Compile Include="Assets\Wizard\Environment\Scripts\MoveCTRLDemo.cs" />
     <Compile Include="Assets\Goblins,Trolls and Hobgoblins\Environment\Scripts\PointLight.cs" />
     <Compile Include="Assets\Scripts\Collect.cs" />
+    <Compile Include="Assets\Scripts\Regenerate Health.cs" />
+    <Compile Include="Assets\Scripts\Regenerate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Goblins,Trolls and Hobgoblins\READ ME FIRST!!!\character setup guide link.txt" />

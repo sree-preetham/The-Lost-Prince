@@ -11,8 +11,6 @@ public class TrollAttack : MonoBehaviour
     public Transform[] target;
 
     public NavMeshAgent agent;
-
-    public AudioSource audioClip;
  
 
     void Update()
@@ -51,7 +49,6 @@ public class TrollAttack : MonoBehaviour
          {
             float attack_range = Vector3.Distance(target[i].position, transform.position);
             animator.SetTrigger("Attack1");
-            audioClip.Play();
             if (attack_range <= agent.stoppingDistance)
             {
 
@@ -67,7 +64,7 @@ public class TrollAttack : MonoBehaviour
          {
             float attack_range = Vector3.Distance(target[i].position, transform.position);
             animator.SetTrigger("Attack2");
-            audioClip.Play();
+            
             if (attack_range <= agent.stoppingDistance)
             {
 
@@ -83,7 +80,6 @@ public class TrollAttack : MonoBehaviour
          {
             float attack_range = Vector3.Distance(target[i].position, transform.position);
             animator.SetTrigger("Attack3");
-            audioClip.Play();
             if (attack_range <= agent.stoppingDistance)
             {
 

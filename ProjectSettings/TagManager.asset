@@ -9,6 +9,7 @@ TagManager:
   - Hobgoblins
   - Goblins
   - trolls
+  - Regenerate
   layers:
   - Default
   - TransparentFX
