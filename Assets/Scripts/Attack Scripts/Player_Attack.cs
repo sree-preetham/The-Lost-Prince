@@ -8,16 +8,18 @@ public class Player_Attack : MonoBehaviour
     public Animator animator;
     public float coolDown = 0.5f;
     public float coolDownTimer;
-    public Transform target;
+    public Transform[] target;
 
-    public EnemyController enemy;
+    public EnemyController[] enemy;
   
 
     public NavMeshAgent agent;
     void Update()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
-        enemy.animator.SetBool("damage_001", false);
+        for(int i=0;i<enemy.Length;i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
+        enemy[i].animator.SetBool("damage_001", false);
         if (coolDownTimer > 0)
         {
             coolDownTimer -= Time.deltaTime;
@@ -41,39 +43,48 @@ public class Player_Attack : MonoBehaviour
             Attack3();
             coolDownTimer = coolDown;
         }
+        }
     }
     void Attack1()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
+        for(int i=0;i<enemy.Length;i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack1");
         if (attack_range <= agent.stoppingDistance)
         {
 
-            enemy.TakeDamage();
+            enemy[i].TakeDamage();
 
         }
-
+        }
     }
     void Attack2()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
+        for(int i=0;i<enemy.Length;i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack2");
         if (attack_range <= agent.stoppingDistance)
         {
 
-            enemy.TakeDamage();
+            enemy[i].TakeDamage();
 
+        }
         }
     }
     void Attack3()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
+        for(int i=0;i<enemy.Length;i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack3");
         if (attack_range <= agent.stoppingDistance)
         {
 
-            enemy.TakeDamage();
+            enemy[i].TakeDamage();
 
+        }
         }
     }
 }

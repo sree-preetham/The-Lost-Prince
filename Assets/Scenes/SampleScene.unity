@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18254042, g: 0.22825192, b: 0.30721223, a: 1}
+  m_IndirectSpecularColor: {r: 0.18254067, g: 0.22825211, b: 0.3072128, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2185,7 +2185,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143586590}
-  m_LocalRotation: {x: 0.20825708, y: -0.67574334, z: 0.20825706, w: 0.67574334}
+  m_LocalRotation: {x: 0.20825703, y: -0.67574334, z: 0.20825706, w: 0.6757433}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2834,11 +2834,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1d3aa1785b29942b6205e574dc1069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblin: {fileID: 1065541682}
+  goblin:
+  - {fileID: 2136980140}
+  - {fileID: 677557610}
+  - {fileID: 92401524}
+  - {fileID: 1065541682}
+  - {fileID: 396589621}
+  - {fileID: 933686202}
+  - {fileID: 1699099583}
+  - {fileID: 382323463}
+  - {fileID: 569435362}
+  - {fileID: 299309617}
+  - {fileID: 416395531}
+  - {fileID: 1022264300}
+  - {fileID: 361198913}
+  - {fileID: 1010455805}
+  - {fileID: 1012387412}
+  - {fileID: 1360893481}
+  - {fileID: 927231989}
+  - {fileID: 1505981113}
+  - {fileID: 682984854}
+  - {fileID: 736393726}
+  - {fileID: 247180388}
+  - {fileID: 2058948219}
+  - {fileID: 635490028}
+  - {fileID: 1844499362}
+  - {fileID: 2122006640}
+  - {fileID: 1650388623}
+  - {fileID: 143549193}
+  - {fileID: 1053875637}
+  - {fileID: 269754388}
+  - {fileID: 1648391715}
+  - {fileID: 1684205881}
+  - {fileID: 1156882181}
+  - {fileID: 1611289233}
+  - {fileID: 1538645522}
+  - {fileID: 1640914503}
+  - {fileID: 1221254264}
+  - {fileID: 1180912246}
+  - {fileID: 1303605776}
+  - {fileID: 847234490}
+  - {fileID: 1405819483}
+  - {fileID: 1972186722}
+  - {fileID: 694875169}
+  - {fileID: 375218730}
   animator: {fileID: 174637758}
   coolDown: 0.5
   coolDownTimer: 0
-  target: {fileID: 540618610}
+  target:
+  - {fileID: 2136980137}
+  - {fileID: 677557607}
+  - {fileID: 92401521}
+  - {fileID: 1065541679}
+  - {fileID: 396589618}
+  - {fileID: 933686199}
+  - {fileID: 1699099580}
+  - {fileID: 382323460}
+  - {fileID: 569435359}
+  - {fileID: 299309614}
+  - {fileID: 416395528}
+  - {fileID: 1022264297}
+  - {fileID: 361198910}
+  - {fileID: 1010455802}
+  - {fileID: 1012387409}
+  - {fileID: 1360893478}
+  - {fileID: 1505981110}
+  - {fileID: 682984851}
+  - {fileID: 736393723}
+  - {fileID: 247180385}
+  - {fileID: 2058948216}
+  - {fileID: 635490025}
+  - {fileID: 1844499359}
+  - {fileID: 2122006637}
+  - {fileID: 1650388620}
+  - {fileID: 143549190}
+  - {fileID: 1053875634}
+  - {fileID: 269754385}
+  - {fileID: 1648391712}
+  - {fileID: 1684205878}
+  - {fileID: 1156882178}
+  - {fileID: 1611289230}
+  - {fileID: 1538645519}
+  - {fileID: 1640914500}
+  - {fileID: 1221254261}
+  - {fileID: 1180912243}
+  - {fileID: 1303605773}
+  - {fileID: 847234487}
+  - {fileID: 1405819480}
+  - {fileID: 1972186719}
+  - {fileID: 694875166}
+  - {fileID: 375218727}
+  - {fileID: 927231988}
   agent: {fileID: 174637766}
 --- !u!4 &174637762 stripped
 Transform:
@@ -2860,8 +2946,20 @@ MonoBehaviour:
   animator: {fileID: 174637758}
   coolDown: 0.5
   coolDownTimer: 0
-  target: {fileID: 1039937805}
-  enemy: {fileID: 1039937803}
+  target:
+  - {fileID: 1039937805}
+  - {fileID: 721969602}
+  - {fileID: 373653035}
+  - {fileID: 84193562}
+  - {fileID: 1812771064}
+  - {fileID: 952664615}
+  enemy:
+  - {fileID: 1039937803}
+  - {fileID: 721969604}
+  - {fileID: 373653037}
+  - {fileID: 84193564}
+  - {fileID: 1812771066}
+  - {fileID: 952664617}
   agent: {fileID: 174637766}
 --- !u!114 &174637764
 MonoBehaviour:
@@ -2930,11 +3028,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d8e1ebfda17864383514a5f89a06d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hobgoblin: {fileID: 152356990}
+  hobgoblin:
+  - {fileID: 152356990}
+  - {fileID: 992279937}
+  - {fileID: 1260233851}
+  - {fileID: 2095985019}
+  - {fileID: 1202009114}
+  - {fileID: 1381656968}
+  - {fileID: 679804726}
+  - {fileID: 323476129}
+  - {fileID: 339157698}
+  - {fileID: 1063831978}
+  - {fileID: 1700082339}
+  - {fileID: 1567015639}
+  - {fileID: 1650038057}
+  - {fileID: 373478498}
+  - {fileID: 1927029077}
+  - {fileID: 1201508002}
+  - {fileID: 1599071272}
+  - {fileID: 1940151385}
+  - {fileID: 1830242812}
+  - {fileID: 1440703304}
+  - {fileID: 1540516725}
+  - {fileID: 1514699536}
+  - {fileID: 1970003569}
+  - {fileID: 277431166}
+  - {fileID: 522546253}
+  - {fileID: 824997635}
+  - {fileID: 1535608483}
+  - {fileID: 2047012839}
+  - {fileID: 1314700172}
+  - {fileID: 2115702365}
+  - {fileID: 1262220606}
+  - {fileID: 757961816}
+  - {fileID: 1164512377}
+  - {fileID: 1275374152}
+  - {fileID: 611456563}
+  - {fileID: 1965240939}
+  - {fileID: 1743086243}
+  - {fileID: 1701279868}
+  - {fileID: 2086922818}
+  - {fileID: 2002596733}
+  - {fileID: 983450629}
+  - {fileID: 802587291}
+  - {fileID: 1924669586}
+  - {fileID: 391800417}
+  - {fileID: 429339553}
+  - {fileID: 1674311735}
   animator: {fileID: 174637758}
   coolDown: 0.5
   coolDownTimer: 0
-  target: {fileID: 152356988}
+  target:
+  - {fileID: 152356988}
+  - {fileID: 992279935}
+  - {fileID: 1260233849}
+  - {fileID: 2095985017}
+  - {fileID: 1202009112}
+  - {fileID: 1381656966}
+  - {fileID: 679804724}
+  - {fileID: 323476127}
+  - {fileID: 339157696}
+  - {fileID: 1063831976}
+  - {fileID: 1700082337}
+  - {fileID: 1567015637}
+  - {fileID: 1650038055}
+  - {fileID: 373478496}
+  - {fileID: 1927029075}
+  - {fileID: 1201508000}
+  - {fileID: 1599071270}
+  - {fileID: 1940151383}
+  - {fileID: 1830242810}
+  - {fileID: 1440703302}
+  - {fileID: 1540516723}
+  - {fileID: 1514699534}
+  - {fileID: 1970003567}
+  - {fileID: 277431164}
+  - {fileID: 522546251}
+  - {fileID: 824997633}
+  - {fileID: 1535608481}
+  - {fileID: 2047012837}
+  - {fileID: 1314700170}
+  - {fileID: 2115702363}
+  - {fileID: 1262220604}
+  - {fileID: 757961814}
+  - {fileID: 1164512375}
+  - {fileID: 1275374150}
+  - {fileID: 611456561}
+  - {fileID: 1965240937}
+  - {fileID: 1743086241}
+  - {fileID: 1743086241}
+  - {fileID: 1701279866}
+  - {fileID: 2086922816}
+  - {fileID: 2002596731}
+  - {fileID: 983450627}
+  - {fileID: 802587289}
+  - {fileID: 391800415}
+  - {fileID: 429339551}
+  - {fileID: 1674311733}
   agent: {fileID: 174637766}
 --- !u!114 &174637768
 MonoBehaviour:
@@ -2948,11 +3138,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f6a774faf26fc4a8693b57a043b29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troll: {fileID: 1098564867}
+  troll:
+  - {fileID: 1098564867}
+  - {fileID: 620913618}
+  - {fileID: 216042790}
+  - {fileID: 131758077}
+  - {fileID: 364511830}
+  - {fileID: 1512462361}
+  - {fileID: 1638905535}
   animator: {fileID: 174637758}
   coolDown: 0.5
   coolDownTimer: 0
-  target: {fileID: 1098564865}
+  target:
+  - {fileID: 1098564865}
+  - {fileID: 620913616}
+  - {fileID: 216042788}
+  - {fileID: 131758075}
+  - {fileID: 364511828}
+  - {fileID: 1512462359}
+  - {fileID: 1638905533}
   agent: {fileID: 174637766}
   audioClip: {fileID: 0}
 --- !u!114 &174637769

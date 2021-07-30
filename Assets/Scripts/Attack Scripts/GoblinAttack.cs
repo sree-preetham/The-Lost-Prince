@@ -6,20 +6,22 @@ using UnityEngine.AI;
 public class GoblinAttack : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GoblinController goblin;
+    public GoblinController[] goblin;
    
 
     public Animator animator;
     public float coolDown = 0.5f;
     public float coolDownTimer;
-    public Transform target;
+    public Transform[] target;
 
     public NavMeshAgent agent;
 
     void Update()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
-        goblin.animator.SetBool("damage", false);
+        for(int i = 0; i < target.Length; i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
+        goblin[i].animator.SetBool("damage", false);
         if (coolDownTimer > 0)
         {
             coolDownTimer -= Time.deltaTime;
@@ -43,39 +45,49 @@ public class GoblinAttack : MonoBehaviour
             Attack3();
             coolDownTimer = coolDown;
         }
+        }
     }
     void Attack1()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
+        for(int i = 0; i < target.Length; i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack1");
         if (attack_range <= agent.stoppingDistance)
         {
 
-            goblin.TakeDamage();
+            goblin[i].TakeDamage();
 
+        }
         }
 
     }
     void Attack2()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
+        for(int i = 0; i < target.Length; i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack2");
         if (attack_range <= agent.stoppingDistance)
         {
 
-            goblin.TakeDamage();
+            goblin[i].TakeDamage();
 
+        }
         }
     }
     void Attack3()
     {
-        float attack_range = Vector3.Distance(target.position, transform.position);
+        for(int i = 0; i < target.Length; i++)
+        {
+        float attack_range = Vector3.Distance(target[i].position, transform.position);
         animator.SetTrigger("Attack3");
         if (attack_range <= agent.stoppingDistance)
         {
 
-            goblin.TakeDamage();
+            goblin[i].TakeDamage();
 
+        }
         }
     }
 }
