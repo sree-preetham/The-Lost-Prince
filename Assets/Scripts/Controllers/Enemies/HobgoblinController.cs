@@ -103,6 +103,7 @@ public class HobgoblinController : MonoBehaviour
     public void Death()
     {
         animator.SetBool("dead", true);
+        Score_card.score += 150;
         isDead = true;
         
     }

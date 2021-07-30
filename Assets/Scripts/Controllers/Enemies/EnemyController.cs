@@ -105,6 +105,7 @@ public class EnemyController : MonoBehaviour
     public void Death()
     {
         animator.SetBool("dead", true);
+        Score_card.score += 250;
         isDead = true;
         
     }

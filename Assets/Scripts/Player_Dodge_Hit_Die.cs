@@ -14,8 +14,11 @@ public class Player_Dodge_Hit_Die : MonoBehaviour
     public EnemyController m_Enemy;
     public GameObject pauseMenuUI;
     public AudioSource end;
-    float timer = 0;
-bool timerReached = false;
+
+    public float coolDown = 2f;
+    public float coolDownTimer = 2f;
+
+    bool timerReached = false;
 
     void Start()
     {
@@ -51,9 +54,17 @@ bool timerReached = false;
         if(currentHealth<=0)
         {
             currentHealth = 0;
-            m_Animator.SetTrigger("Die");           
+            m_Animator.SetTrigger("Die");
+            if (coolDownTimer > 0)
+            {
+                coolDownTimer -= Time.deltaTime * 15 ;
+            }
+            else if (coolDownTimer <= 0)
+            {
                 die();
-                end.Play();           
+                end.Play();
+            }
+                     
         }
         
     }

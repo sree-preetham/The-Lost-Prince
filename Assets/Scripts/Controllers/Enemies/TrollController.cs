@@ -101,6 +101,7 @@ public class TrollController : MonoBehaviour
     public void Death()
     {
         animator.SetBool("dead", true);
+        Score_card.score += 200;
         isDead = true;
        
     }

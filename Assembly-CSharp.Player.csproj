@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Attack Scripts\HobgoblinAttack.cs" />
     <Compile Include="Assets\Scripts\Score_card.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Regenerate.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Player_Dodge_Hit_Die.cs" />
@@ -79,10 +80,9 @@
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
     <Compile Include="Assets\Scripts\Attack Scripts\Player_Attack.cs" />
     <Compile Include="Assets\Wizard\Environment\Scripts\MoveCTRLDemo.cs" />
+    <Compile Include="Assets\Scripts\Regenerate Health.cs" />
     <Compile Include="Assets\Goblins,Trolls and Hobgoblins\Environment\Scripts\PointLight.cs" />
     <Compile Include="Assets\Scripts\Collect.cs" />
-    <Compile Include="Assets\Scripts\Regenerate Health.cs" />
-    <Compile Include="Assets\Scripts\Regenerate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Goblins,Trolls and Hobgoblins\READ ME FIRST!!!\character setup guide link.txt" />

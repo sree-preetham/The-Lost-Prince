@@ -101,6 +101,7 @@ public class GoblinController : MonoBehaviour
     public void Death()
     {
         animator.SetBool("dead", true);
+        Score_card.score += 100;
         isDead = true;
        
     }
