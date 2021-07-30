@@ -8,7 +8,6 @@ public class GameEndingWin : MonoBehaviour
     public float fadeDuration=1f;
     public GameObject player;
     bool isPlayerExit=false;
-    float m_timer;
 
     void OnTriggerEnter(Collider other)
     {
