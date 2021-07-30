@@ -17,6 +17,7 @@ public class TrollAttack : MonoBehaviour
     {
         for(int i=0;i<troll.Length;i++)
         {
+            float attack_range = Vector3.Distance(target[i].position, transform.position);
         troll[i].animator.SetBool("damage", false);
         if (coolDownTimer > 0)
         {
