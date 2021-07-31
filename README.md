@@ -10,10 +10,10 @@ b. Github Repo of 1st Week&#39;s Submission - https://github.com/Sahilsingh0808/
 
 c. PDF of our team&#39;s design doc - https://drive.google.com/file/d/1AyW2Q5Vo-HELRH\_1ozigPUbjXilcuakV/view
 
-d. EndTerm Game Link - https://github.com/Sahilsingh0808/The-Lost-Prince
+d. EndTerm Game Link - https://iitk-my.sharepoint.com/:f:/g/personal/preetham_iitk_ac_in/EvdmlQ2XLplEqTHYEoDGlTkBQBMJYJVAfUYUwHbld-Efxw?e=Ql8Mlr
 
 e. Demo Video - https://drive.google.com/drive/folders/1u85TnEgfRcYV9fuzdtpYD8Q1PVFTagN4?usp=sharing
 
 f. Github Link - https://github.com/Sahilsingh0808/The-Lost-Prince
 
-g. Work done by me - added start scene of game, added gameover scene, added pause scene, added audio to the game
+g. Work done by me - added start scene of game, added gameover scene, added pause scene, added audio to the game, placed enemies and done some scripting
